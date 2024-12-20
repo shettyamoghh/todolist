@@ -47,8 +47,19 @@ function App() {
 
   return (
     <>
-      <ToDoInput task={task} setTask={setTask} handleAdd={handleAdd}/>
-      <ToDoList handleEdit={handleEdit} handleDelete={handleDelete} list={list} />
+      <div className="center">
+        <h1>A Simple To-Do List</h1>
+      </div>
+      <div className="header">
+        <h2>by Amogh Shetty</h2>
+      </div>
+      <div className="center">
+        <img src="/staring-window.gif" width="750px"/>
+      </div>
+      <>
+        <ToDoInput task={task} setTask={setTask} handleAdd={handleAdd}/>
+        <ToDoList handleEdit={handleEdit} handleDelete={handleDelete} list={list} />
+      </>
     </>
   )
 }

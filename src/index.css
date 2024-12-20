@@ -7,7 +7,11 @@
 }
 
 h1,
-h2,
+h2 {
+  display: flex;
+  align-items: center;
+}
+
 h3,
 input,
 button {
@@ -19,7 +23,7 @@ button {
   display: flex;
   flex-direction: column;
   padding: 14px;
-  background: #eff6ff;
+  background: #D3D3D3;
   gap: 14px;
 }
 
@@ -102,7 +106,33 @@ p {
   opacity: 0.7;
 }
 
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+}
 
+.center img {
+  width: 800px;
+  margin-bottom: 50px;
+  border-radius: 2.5%;
+}
+
+.header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1000px;
+}
+
+.header h2 {
+  display: flex;
+  font-weight: normal;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
 
 @media (min-width: 640px) {
 
@@ -114,4 +144,5 @@ p {
   p {
     font-size: 1em;
   }
+
 }
