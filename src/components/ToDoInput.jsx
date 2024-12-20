@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 
 export default function ToDoInput(props) {
-  const { handleAdd } = props
-  const [task, setTask] = useState('')
+  const {handleAdd, task, setTask} = props
   return (
     <header>
       <input value={task} onChange={(e) => {
@@ -10,6 +9,7 @@ export default function ToDoInput(props) {
       }} placeholder='Enter task...'/>
       <button onClick={() => {
         handleAdd(task)
+        setTask('')
       }}>Add</button>
     </header>
   )
