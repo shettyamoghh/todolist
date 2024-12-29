@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import ToDoInput from "./components/ToDoInput"
 import ToDoList from "./components/ToDoList"
+import Footer from "./components/Footer"
 
 function App() {
   const [list, setList] = useState([])
@@ -60,6 +61,7 @@ function App() {
         <ToDoInput task={task} setTask={setTask} handleAdd={handleAdd}/>
         <ToDoList handleEdit={handleEdit} handleDelete={handleDelete} list={list} />
       </>
+      <Footer />
     </>
   )
 }
